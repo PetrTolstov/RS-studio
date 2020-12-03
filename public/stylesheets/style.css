@@ -1,0 +1,246 @@
+@media screen and (min-width: 1900px){
+    div.firstStudio, div.secondStudio, div.thirdStudio{
+        -moz-background-size: 100%; /* Firefox 3.6+ */
+        -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 100%; /* Opera 9.6+ */
+        background-size: 100%;
+    }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+footer{
+
+    font-family: "Roboto", monospace;
+    background: black;
+    height: 70px;
+
+
+}
+
+header{
+    font-family: "Roboto", monospace;
+    background: black;
+    height: 70px;
+}
+
+.logo{
+    height:50px;
+    margin: auto;
+}
+
+.navbar{
+
+    margin: 0;
+}
+
+.navbar-brand{
+    margin-left: 25px;
+
+}
+
+.navbar li{
+    list-style-type: none;
+}
+
+.row a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.row a:hover{
+    color: gray;
+
+    text-decoration: none;
+}
+
+
+div.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.firstStudio{
+    text-align: center;
+    margin: 0;
+    background: url("../images/firstStudioPic.png") no-repeat;
+
+    background-color: #8947cc;
+    height: 886px;
+    width: 100%;
+}
+
+.contentBlock{
+    background: rgba(0,0,0,0.8);
+    width: 500px;
+    height: 300px;
+}
+
+.inner{
+    display: table;
+    margin: 25px;
+    width: auto;
+    border: solid 10px;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to right bottom, #4755CC, #8947CC);
+
+}
+
+.contentBlock .inner{
+
+    height: 250px;
+
+}
+
+.borderCol{
+    border: solid 10px;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to right bottom, #4755CC, #8947CC);
+}
+
+#firstBlock{
+    position: absolute;
+
+    right: 100px;
+    top: 150px;
+}
+
+#secondBlock{
+    position: absolute;
+
+    left: 100px;
+    top: 500px;
+}
+
+
+p{
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p.blockText{
+
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 36px;
+}
+
+strong{
+    background: -webkit-linear-gradient(left, #FF4A00 , #FFB800);
+    background: -o-linear-gradient(right, #FF4A00, #FFB800);
+    background: -moz-linear-gradient(right, #FF4A00, #FFB800);
+    background: linear-gradient(to right, #FF4A00 , #FFB800);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ulHeader{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.servers{
+    background: black;
+    height: 380px;
+    width: 100%;
+}
+
+.servers ul{
+    list-style-image: url("../images/star.svg");
+    margin-left: 50px;
+
+}
+
+
+.servers ul li {
+    position: relative;
+    margin: 15px;
+}
+
+.servers ul li p{
+    position: absolute;
+    top: 2px;
+}
+
+#mic{
+    margin-top: 40px;
+    height: 300px;
+    width: 350px;
+    margin-left: 30px;
+}
+
+.secondStudio{
+    text-align: center;
+    margin: 0;
+    background: url("../images/secondStudioPic.png") no-repeat;
+
+    background-color: #8947cc;
+    height: 600px;
+    width: 100%;
+}
+
+.description{
+    background: rgba(0,0,0,0.8);
+    height: 100%;
+}
+
+.description .inner{
+    display: table;
+    line-height: 300%;
+    height: 94%;
+}
+
+.description .inner p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.emptyBlock{
+    height: 40px;
+    background: black;
+}
+
+.thirdStudio{
+
+    margin: 0;
+    background: url("../images/thirdStudioPic.png") no-repeat;
+
+    background-color: #8947cc;
+    height: 700px;
+    width: 100%;
+}
+
+#c{
+    font-size: 10px;
+    color: #888888;
+    text-align: center;
+}
+
+#aftermath{
+    height: 80%;
+    margin: auto;
+}
