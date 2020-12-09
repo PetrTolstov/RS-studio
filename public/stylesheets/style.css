@@ -1,11 +1,200 @@
-@media screen and (min-width: 1900px){
-    div.firstStudio, div.secondStudio, div.thirdStudio{
+@media screen and (min-width: 1900px) {
+    div.firstStudio, div.secondStudio, div.thirdStudio {
         -moz-background-size: 100%; /* Firefox 3.6+ */
         -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
         -o-background-size: 100%; /* Opera 9.6+ */
         background-size: 100%;
     }
+
+    li#lang{
+        margin-left: 30vw;
+    }
+
+    #collapsibleNavbar ul li {
+        padding-left: 1.3vw;
+        padding-right: 1.3vw;
+    }
 }
+
+@media screen and (max-width: 487px) {
+    div span a.google_ss{
+        border-radius: 16px;
+
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    footer a{
+        font-size: 12px;
+    }
+
+    div.contentBlock div.inner{
+        margin: 10px;
+        height: 280px;
+    }
+
+    div.firstStudio{
+        display: flex;
+        justify-content: center;
+    }
+
+    div.contentBlock{
+        position: static;
+
+    }
+
+    div#firstBlock{
+        margin-top: 100px;
+    }
+
+    footer #c{
+        font-size: 5px;
+    }
+
+    main div p{
+        font-size: 12px;
+
+    }
+
+    main div.description  p{
+        line-height: 220%;
+        font-size: 18px;
+    }
+
+    main div p.blockText{
+
+        font-size: 25px;
+    }
+
+    main div p.ulHeader{
+
+        font-size: 30px;
+
+    }
+
+    div span#count_rat{
+        font-size: 8px;
+        color: lightgray;
+
+    }
+
+    div div.header_google_rating b{
+        font-size: 16px;
+    }
+
+    div span.stars svg{
+        width: 16px;
+        height: 16px;
+    }
+
+    p.main_rating{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 677px) {
+    .contentBlock{
+        background: rgba(0,0,0,0.8);
+        width: 20vw;
+        height: 300px;
+    }
+
+    #c{
+        font-size: 5px;
+    }
+
+    div p{
+        font-size: 16px;
+
+    }
+
+    div p.blockText{
+
+        font-size: 30px;
+    }
+
+    div p.ulHeader{
+
+        font-size: 36px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 767px){
+    li#lang {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px){
+    img#aftermath{
+        width: 100%;
+        height: auto;
+    }
+
+    div.contentBlock{
+        width: 70%;
+        height: 300px;
+    }
+
+    span#count_rat{
+        font-size: 12px;
+        color: lightgray;
+
+    }
+
+    div.header_google_rating b{
+        font-size: 20px;
+    }
+
+
+
+    span.stars svg{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1199px){
+    img#mic{
+        display: none;
+    }
+
+    div.secondStudio{
+        height: auto;
+    }
+
+    div.header_google_rating, div.carousel_google_rating{
+        width: 100vw;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 375px){
+    div span a.google_ss{
+        border-radius: 16px;
+
+        font-size: 8px;
+        padding: 5px;
+    }
+
+    .up_rating svg, .up_rating span{
+        padding-right: 5px;
+    }
+
+    p.up_rating{
+        padding: 0;
+    }
+}
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -27,27 +216,54 @@
 }
 footer{
 
-    font-family: "Roboto", monospace;
+    font-family: -apple-system, "Roboto", monospace;
     background: black;
     height: 70px;
 
 
 }
 
-header{
-    font-family: "Roboto", monospace;
+
+.nav-link{
+    text-align: center;
+}
+
+
+
+#collapsibleNavbar{
+    justify-content: flex-end;
+
+
+}
+
+#collapsibleNavbar li {
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.navbar-bar{
     background: black;
-    height: 70px;
+}
+
+nav{
+    font-family: -apple-system, "Roboto", monospace;
+    background: black;
+
 }
 
 .logo{
     height:50px;
     margin: auto;
 }
+#lang a{
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
 
-.navbar{
+}
 
-    margin: 0;
+#lang{
+    margin-left: 20vw;
 }
 
 .navbar-brand{
@@ -55,9 +271,19 @@ header{
 
 }
 
-.navbar li{
-    list-style-type: none;
+
+#collapsibleNavbar a{
+    color: white;
+    text-decoration: none;
+
 }
+
+#collapsibleNavbar a:hover{
+    color: gray;
+
+    text-decoration: none;
+}
+
 
 .row a{
     color: white;
@@ -71,12 +297,13 @@ header{
     text-decoration: none;
 }
 
-
 div.row{
     margin-left: 0;
     margin-right: 0;
 }
 .firstStudio{
+    position: relative;
+
     text-align: center;
     margin: 0;
     background: url("../images/firstStudioPic.png") no-repeat;
@@ -87,9 +314,11 @@ div.row{
 }
 
 .contentBlock{
+    position: absolute;
     background: rgba(0,0,0,0.8);
     width: 500px;
     height: 300px;
+    border-radius: 5%;
 }
 
 .inner{
@@ -101,7 +330,14 @@ div.row{
     border-width: 3px;
     border-image-source: linear-gradient(to right bottom, #4755CC, #8947CC);
 
+
 }
+
+.navbar-toggler:focus{
+    outline: 1px solid #888888;
+
+}
+
 
 .contentBlock .inner{
 
@@ -117,14 +353,12 @@ div.row{
 }
 
 #firstBlock{
-    position: absolute;
 
     right: 100px;
-    top: 150px;
+    top: 100px;
 }
 
 #secondBlock{
-    position: absolute;
 
     left: 100px;
     top: 500px;
@@ -132,7 +366,7 @@ div.row{
 
 
 p{
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: -apple-system, 'IBM Plex Mono', monospace;
     color: white;
     font-size: 20px;
     padding-left: 20px;
@@ -165,32 +399,33 @@ strong{
 
 .servers{
     background: black;
-    height: 380px;
+    height: auto;
     width: 100%;
 }
 
 .servers ul{
     list-style-image: url("../images/star.svg");
     margin-left: 50px;
-
+    margin-bottom: 40px;
 }
 
 
 .servers ul li {
+    padding-top: 20px;
     position: relative;
     margin: 15px;
 }
 
 .servers ul li p{
     position: absolute;
-    top: 2px;
+    top: 19px;
 }
 
 #mic{
     margin-top: 40px;
     height: 300px;
-    width: 350px;
-    margin-left: 30px;
+
+
 }
 
 .secondStudio{
@@ -219,6 +454,107 @@ strong{
     vertical-align: middle;
 }
 
+.rating{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.header_google_rating, .carousel_google_rating{
+    max-width: 1200px;
+}
+
+
+#count_rat{
+    font-size: 16px;
+    color: lightgray;
+
+}
+
+.button_google{
+    width: 100%;
+    text-align: right;
+}
+
+#google_icon{
+    height: 42px;
+    padding-bottom: 4px;
+}
+
+.up_rating{
+    display: table;
+    padding-right: 0;
+}
+
+.up_rating svg, .up_rating span{
+    display: table-cell ;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.main_rating{
+    display: table;
+}
+
+.stars svg, .google_item svg{
+    width: 35px;
+    height: 35px;
+}
+
+
+.main_rating b, .main_rating span{
+    display: table-cell ;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+
+.google_rating {
+    margin: auto;
+}
+
+.header_google_rating, .carousel_google_rating{
+    width: 40vw;
+    margin-bottom: 20px;
+    text-align: left;
+
+
+}
+
+.header_google_rating{
+    border-radius: 10px;
+    background: #FAFAFA;
+
+    padding: 20px;
+}
+
+.header_google_rating b{
+    font-size: 30px;
+}
+
+
+
+.header_google_rating p{
+
+    margin-bottom: 0;
+
+    color: black;
+
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+
+}
+
+span a.google_ss{
+    border-radius: 16px;
+    background: rgb(28, 145, 255);
+    font-size: 12px;
+    padding: 10px;
+}
+
 .emptyBlock{
     height: 40px;
     background: black;
@@ -238,9 +574,18 @@ strong{
     font-size: 10px;
     color: #888888;
     text-align: center;
+    margin-bottom: 0 ;
 }
 
 #aftermath{
     height: 80%;
     margin: auto;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer{
+    height: auto;
 }
