@@ -1,7 +1,31 @@
 doctype html
 html
   head
-    title= title
+    title= 'SR-studio'
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/slider.css')
+
+
+
+    meta(name='description' content='Site about films')
+    // мета элемент, который описывает содержимое документа
+    meta(name='keywords' content='studio, recording studio, студия, звукозаписывающая студия, студия звукозаписи')
+    // мета элемент, который описывает ключевые слова в документе
+    meta(name='author' content='Petr Tolstov')
+    // мета элемент, который указывает имя автора документа
+    meta(charset='UTF-8' http-equiv='refresh' content='999')
+    // <meta  http-equiv  = "content-security-policy" content = "default-src https:" > мета элемент, который разрешает загрузку ресурсов (изображения, шрифты, скрипты и так далее) только с использованием https
+    meta(name='robots' content='index, follow')
+    // Используется поисковыми системами при индексации страниц и прохода по ссылкам поисковой системой
+    meta(name='viewport' content='width=device-width, initial-scale = 1')
+    // Для того, чтобы мобильные браузеры автоматически не изменяли размер страниц сайта
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    title &Scy;&tcy;&ucy;&dcy;&icy;&yacy;
+    link(rel='icon' href='/images/icon.png' sizes='16x16 32х32' type='image/png')
+
+    script(src='/javascripts/main.js')
+    script(src='/javascripts/slider.js')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous')
+
   body
     block content

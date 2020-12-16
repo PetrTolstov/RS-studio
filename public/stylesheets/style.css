@@ -1,10 +1,14 @@
-@media screen and (min-width: 1900px) {
+
+@media screen and (min-width: 1800px) {
     div.firstStudio, div.secondStudio, div.thirdStudio {
         -moz-background-size: 100%; /* Firefox 3.6+ */
         -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
         -o-background-size: 100%; /* Opera 9.6+ */
         background-size: 100%;
     }
+}
+@media screen and (min-width: 1900px) {
+
 
     li#lang{
         margin-left: 30vw;
@@ -518,8 +522,11 @@ strong{
 
 .header_google_rating, .carousel_google_rating{
     width: 40vw;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: left;
+    border-radius: 16px;
+    background: #FAFAFA;
 
 
 }
@@ -553,7 +560,14 @@ span a.google_ss{
     background: rgb(28, 145, 255);
     font-size: 12px;
     padding: 10px;
+    color: #e9e9e9;
 }
+
+span a.google_ss:hover{
+    color: #ffffff;
+    background: #0069cf;;
+}
+
 
 .emptyBlock{
     height: 40px;

@@ -48,9 +48,11 @@
 }
 
 .google_item{
-    background: #FAFAFA;
+
     max-height: 400px;
     padding: 25px;
+
+
 }
 
 .google_item p{
@@ -90,6 +92,10 @@
 
 .google_foot .link_for_com{
     color: rgb(28, 145, 255);
+}
+
+.google_foot .link_for_com:hover{
+    color: #0069cf;
 }
 
 .slider__control {
@@ -144,3 +150,10 @@
 
     text-align: center;
 }
+
+#a #b #v .vk_post{
+    flex: 0 0 20%;
+    max-width: 20%;
+    height: 800px;
+}
+
