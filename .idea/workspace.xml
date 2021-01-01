@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13225408-5ac3-4a65-91f6-466c691855d9" name="Default Changelist" comment="01.01.2021" />
+    <list default="true" id="13225408-5ac3-4a65-91f6-466c691855d9" name="Default Changelist" comment="01.01.2021 bruh">
+      <change afterPath="$PROJECT_DIR$/public/images/basicad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/beginer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/voice_acting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/services.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +98,7 @@
       <workItem from="1609411079099" duration="2733000" />
       <workItem from="1609414789260" duration="35000" />
       <workItem from="1609426433639" duration="3754000" />
-      <workItem from="1609510557818" duration="3792000" />
+      <workItem from="1609510557818" duration="4092000" />
     </task>
     <task id="LOCAL-00001" summary="new dawn">
       <created>1608140284329</created>
@@ -108,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609513955252</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="01.01.2021 bruh">
+      <created>1609514693549</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609514693549</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +142,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new dawn" />
     <MESSAGE value="01.01.2021" />
-    <option name="LAST_COMMIT_MESSAGE" value="01.01.2021" />
+    <MESSAGE value="01.01.2021 bruh" />
+    <option name="LAST_COMMIT_MESSAGE" value="01.01.2021 bruh" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
