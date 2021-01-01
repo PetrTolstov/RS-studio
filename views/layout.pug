@@ -27,5 +27,52 @@ html
     script(src='/javascripts/slider.js')
     link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous')
 
-  body
+  body.body
+    nav.navbar.navbar-expand-md.navbar-dark
+      #log
+        a.navbar-brand(href='#')
+          img.logo(src='/images/icon.png' alt='SR studio')
+      // Links
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
+        span.navbar-toggler-icon
+      #collapsibleNavbar.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href='/') Главная
+          li.nav-item
+            a.nav-link(href='/news') Новости
+          li.nav-item
+            a.nav-link(href='/services') Услуги
+          li.nav-item
+            a.nav-link(href='#') О нас
+          li#lang.nav-item
+            a.nav-link(href='#') ET
+            a.nav-link(href='#') EN
+
+
     block content
+
+    footer
+      .row
+        .col-xl-2.p-0
+        .col-xl-8.p-0
+          ul.navbar.justify-content-center.p-0
+            li.nav-item
+              a.nav-link(href='/') Главная
+            li.nav-item
+              a.nav-link(href='/news') Новости
+            li.nav-item
+              a.nav-link(href='/services') Услуги
+            li.nav-item
+              a.nav-link(href='#') О нас
+        .col-xl-2.p-0
+      div
+        h6= date
+        p#c
+          | The website is Ivkhkweb intellectual property and not commercial resource. All other sources links are in sources
+
+
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+  script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV' crossorigin='anonymous')
+

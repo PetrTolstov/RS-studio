@@ -1,0 +1,39 @@
+extends layout
+
+block content
+
+
+    script(type='text/javascript' src='https://vk.com/js/api/openapi.js?168')
+    // VK Widget
+    main.main_part
+        .elem
+        .main_col
+            article
+                .gradient-box.purple
+                    #vk_post_-195306108_2939
+            article
+                .gradient-box.purple
+                    #vk_post_-195306108_2937
+            article
+                .gradient-box.purple
+                    #vk_post_-195306108_2936
+            article
+                .gradient-box.purple
+                    #vk_post_-195306108_2935
+            button.load_more &Zcy;&acy;&gcy;&rcy;&ucy;&zcy;&icy;&tcy;&softcy; &iecy;&shchcy;&iocy;
+        aside.elem.group
+            .gradient-box.orange.facebook
+                iframe(src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=300&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId' width='300' height='130' style='border:none;overflow:hidden' scrolling='no' frameborder='0' allowfullscreen='true' allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share')
+            .gradient-box.orange.vk
+                #vk_groups
+                script(type='text/javascript').
+                    VK.Widgets.Group("vk_groups", {mode: 3, width: "300"}, 195306108);
+
+    script(type='text/javascript' src='https://vk.com/js/api/openapi.js?168')
+    script(type='text/javascript').
+        (function () {
+                VK.Widgets.Post("vk_post_-195306108_2939", -195306108, 2939, 'mPrsu7i--08R6TLpLriMlWMYyOTF');
+                VK.Widgets.Post("vk_post_-195306108_2937", -195306108, 2937, '9oIpSu_WC-0joVvP4Tjk7J2uo74Z');
+                VK.Widgets.Post("vk_post_-195306108_2936", -195306108, 2936, 'A3QBxp9EVMFmtd-qcCJW3VT5_emI');
+                VK.Widgets.Post("vk_post_-195306108_2935", -195306108, 2935, 'KpRou84YvnMucz3u5YzsVvB1KKru');
+            }());
