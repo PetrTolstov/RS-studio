@@ -40,4 +40,11 @@ router.get('/services', function(req, res, next) {
   res.render('services', {date : dat.getHours()});
 });
 
+router.get('/aboutus', function(req, res, next) {
+  let dat = new Date();
+
+  res.render('aboutus', {date : dat.getHours()});
+});
+
+
 module.exports = router;

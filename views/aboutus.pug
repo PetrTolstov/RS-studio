@@ -1,0 +1,56 @@
+extends layout
+
+block content
+
+
+    script(type='text/javascript' src='https://vk.com/js/api/openapi.js?168')
+    // VK Widget
+    main
+        .perphot
+            img(src='/images/p.png' alt='')
+            img(src='/images/i.png' alt='')
+            img(src='/images/e.png' alt='')
+        .gradient-box.purple.brda.choice_block_border
+            .choice_block.nomarg
+                p.service_text
+                    | SR-studio &mdash; &ecy;&tcy;&ocy; &pcy;&rcy;&ocy;&fcy;&iecy;&scy;&scy;&icy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&acy;&yacy; &scy;&tcy;&ucy;&dcy;&icy;&yacy; &zcy;&vcy;&ucy;&kcy;&ocy;&zcy;&acy;&pcy;&icy;&scy;&icy; &vcy; &Jcy;&ycy;&khcy;&vcy;&icy;
+                    | &Ncy;&acy;&shcy;&acy; &ocy;&scy;&ncy;&ocy;&vcy;&ncy;&acy;&yacy; &zcy;&acy;&dcy;&acy;&chcy;&acy; &mdash; &ecy;&tcy;&ocy; &pcy;&rcy;&iecy;&dcy;&ocy;&scy;&tcy;&acy;&vcy;&icy;&tcy;&softcy; &vcy;&ocy;&zcy;&mcy;&ocy;&zhcy;&ncy;&ocy;&scy;&tcy;&softcy; &kcy;&acy;&chcy;&iecy;&scy;&tcy;&vcy;&iecy;&ncy;&ncy;&ocy; &zcy;&acy;&pcy;&icy;&scy;&acy;&tcy;&softcy; &vcy;&acy;&shcy;&icy; &mcy;&ucy;&zcy;&ycy;&kcy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy; &tcy;&vcy;&ocy;&rcy;&chcy;&iecy;&scy;&kcy;&icy;&iecy; &icy;&dcy;&iecy;&icy; &ncy;&acy; &vcy;&ycy;&scy;&ocy;&kcy;&ocy;&mcy; &pcy;&rcy;&ocy;&fcy;&iecy;&scy;&scy;&icy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ocy;&mcy; &ucy;&rcy;&ocy;&vcy;&ncy;&iecy;.
+        .elem
+        .gradient-box.orange.maprel
+            #wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3
+                #map-9cd199b9cc5410cd3b1ad21cab2e54d3
+                script#mapscriptt.
+                    (function () {
+                        var setting = {
+                            "height": 300,
+                            "width": 1000,
+                            "zoom": 13,
+                            "queryString": "Tolmets Jõhvi, Kaasiku, Йыхви, Ида-Вирумаа, Эстония",
+                            "place_id": "ChIJ27jDumVllEYR9wo5PRsBagg",
+                            "satellite": false,
+                            "centerCoord": [60.6079449560895, 23.85896039934775],
+                            "cid": "0x86a011b3d390af7",
+                            "lang": "ru",
+                            "cityUrl": "/finland/hirsjarvi-324948",
+                            "cityAnchorText": "Карта [CITY1], Западная Финляндия, Финляндия",
+                            "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                            "embed_id": "336029"
+                        };
+                        var d = document;
+                        var s = d.createElement('script');
+                        s.src = 'https://1map.com/js/script-for-user.js?embed_id=336029';
+                        s.async = true;
+                        s.onload = function (e) {
+                            window.OneMap.initMap(setting)
+                        };
+                        var to = d.getElementById('mapscriptt');
+                        to.parentNode.insertBefore(s, to);
+                    })();
+                a(href='https://1map.com/ru/map-embed') 1 Map
+        aside.elem.group.gtnjo
+            .gradient-box.orange.facebook
+                iframe(src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=messages&width=300&height=222&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId' width='300' height='222' style='border:none;overflow:hidden' scrolling='no' frameborder='0' allowfullscreen='true' allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share')
+            .gradient-box.orange.vk
+                #vk_groups
+                script(type='text/javascript').
+                    VK.Widgets.Group("vk_groups", {mode: 3, width: "300"}, 195306108);
