@@ -1,5 +1,5 @@
-
-
+let wants =document.getElementById("wants");
+let sk = 0;
 let sum = 0;
 let sumOfService = document.getElementById("sumOfService")
 let listOfidButd = [
@@ -33,11 +33,18 @@ for (let listOfIdButElement of listOfidButd) {
     idBut.addEventListener('click', activityWithBut);
 }
 
+
+
+wants.addEventListener('click', watskidka);
+
+
 function activityWithRange(){
 
     let step = +this.value;
     let elsum;
 
+
+    let butsum = document.getElementById("conttobuy")
 
     let parsis = this.parentElement.previousElementSibling
 
@@ -69,6 +76,12 @@ function activityWithRange(){
         sum+=priceForInstrum;
     }
 
+    if(sum == 0){
+        butsum.disabled = true;
+    }else {
+        butsum.disabled = false;
+    }
+
     numOfRange.innerText = step;
     writeSum()
 }
@@ -79,15 +92,39 @@ function writeSum(){
     sumOfService.innerText = sum +'€'
 }
 
+function watskidka(){
+    if (this.checked === true) {
+        sum+=sk;
+        sk = sum*0.1
+        sum-=sk;
+
+    }
+    else{
+        sum+=sk;
+
+    }
+
+    writeSum()
+}
+
 function activityWithBut(){
     if (this.checked === true) {
         sum+=15;
-        writeSum()
+
 }
     else{
         sum-=15;
-        writeSum()
+
 }
+    let butsum = document.getElementById("conttobuy");
+
+    if(sum == 0){
+        butsum.disabled = true;
+    }else {
+        butsum.disabled = false;
+    }
+
+    writeSum()
 }
 
 

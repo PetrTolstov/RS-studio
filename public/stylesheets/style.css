@@ -998,10 +998,14 @@ input:checked[type="checkbox"] {
 }
 
 #conttobuy{
-   background: rgba(137,71,204,0.9);
+   background: rgb(128, 69, 160);
     border-radius: 0.5rem;
     border: none;
 
+}
+
+#conttobuy:disabled{
+    background: rgba(137,71,204,0.9);
 }
 
 #conttobuy p{
