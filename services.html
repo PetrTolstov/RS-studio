@@ -15,8 +15,6 @@
     <link href="public/stylesheets/style.css" type="text/css" rel="stylesheet">
     <link href="public/stylesheets/slider.css" type="text/css" rel="stylesheet">
 
-    <script src="public/javascripts/main.js"></script>
-    <script src="public/javascripts/slider.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -150,30 +148,34 @@
                 </div>
                 <div class="twist">
                     <div class="buts_with_t">
-
-                    </div>
+                        <b class="priceOfRange">0€</b>
+                        <b class="numOfRange">0</b>
+                        </div>
 
                     <div class="buts_with_t">
                         <p class="service_text">Люди</p>
-                        <input type="range" value="0" max="9" step="1" style="background: rgba(0,0,0,0)"/>
+                        <input id="peopleBut" type="range" value="0" max="9" step="1" style="background: rgba(0,0,0,0)"/>
+
                     </div>
 
                     <div class="buts_with_t">
-
+                        <b class="priceOfRange">0€</b>
+                        <b class="numOfRange">0</b>
                     </div>
 
                     <div class="buts_with_t">
                         <p class="service_text">Инструменты</p>
-                        <input type="range" value="0" max="9" step="1" style="background: rgba(0,0,0,0)"/>
+                        <input id="instrumBut" type="range" value="0" max="9" step="1" style="background: rgba(0,0,0,0)"/>
                     </div>
 
                     <div class="buts_with_t">
-
+                        <b class="priceOfRange">0€</b>
+                        <b class="numOfRange">0</b>
                     </div>
 
                     <div class="buts_with_t">
                         <p class="service_text">Часы</p>
-                        <input type="range" value="0" max="9" step="1" style="background: rgba(0,0,0,0)"/>
+                        <input id="hoursBut" type="range" value="0" max="9" step="1" style="background: rgba(0,0,0,0)"/>
                     </div>
                 </div>
             </div>
@@ -191,7 +193,7 @@
 
                         <form action="#">
                         <button type="submit" id="conttobuy">
-                            <p class="service_text">Продолжить <strong>90€</strong></p>
+                            <p class="service_text">Продолжить <strong id="sumOfService">0€</strong></p>
                         </button>
                         </form>
 
@@ -200,6 +202,8 @@
 
         </div>
     </div>
+
+
 
 
     <div class="gradient-box purple choice_block_border">
@@ -213,30 +217,11 @@
 
 
 
-    <aside class="elem group gtnjo">
-
-        <div class="gradient-box orange facebook">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=messages&width=300&height=222&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="222" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </div>
-
-
-        <div class="gradient-box orange vk">
-
-            <div id="vk_groups" ></div>
-            <script type="text/javascript">
-                VK.Widgets.Group("vk_groups", {mode: 3, width: "300"}, 195306108);
-            </script>
-
-        </div>
-
-
-    </aside>
-
     <div class="gradient-box orange maprel">
         <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
             <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
             <script id="mapscriptt">(function () {
-                var setting = {"height":130,"width":1000,"zoom":13,"queryString":"Tolmets Jõhvi, Kaasiku, Йыхви, Ида-Вирумаа, Эстония","place_id":"ChIJ27jDumVllEYR9wo5PRsBagg","satellite":false,"centerCoord":[60.6079449560895,23.85896039934775],"cid":"0x86a011b3d390af7","lang":"ru","cityUrl":"/finland/hirsjarvi-324948","cityAnchorText":"Карта [CITY1], Западная Финляндия, Финляндия","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"336029"};
+                var setting = {"height":300,"width":1000,"zoom":13,"queryString":"Tolmets Jõhvi, Kaasiku, Йыхви, Ида-Вирумаа, Эстония","place_id":"ChIJ27jDumVllEYR9wo5PRsBagg","satellite":false,"centerCoord":[60.6079449560895,23.85896039934775],"cid":"0x86a011b3d390af7","lang":"ru","cityUrl":"/finland/hirsjarvi-324948","cityAnchorText":"Карта [CITY1], Западная Финляндия, Финляндия","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"336029"};
                 var d = document;
                 var s = d.createElement('script');
                 s.src = 'https://1map.com/js/script-for-user.js?embed_id=336029';
@@ -249,6 +234,24 @@
             })();</script><a href="https://1map.com/ru/map-embed">1 Map</a></div>
     </div>
 
+    <aside class="elem group gtnjo">
+
+        <div class="gradient-box orange facebook">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSR-studio-104952744899222&tabs=messages&width=300&height=288&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="288" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+
+
+        <div class="gradient-box orange vk">
+
+            <div id="vk_groups"></div>
+            <script type="text/javascript">
+                VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, width: "300", height: "288"}, 201752528);
+            </script>
+
+        </div>
+
+
+    </aside>
 </main>
 <footer>
     <div class="row">
@@ -276,6 +279,8 @@
 
 
 
+<script src="public/javascripts/main.js"></script>
+<script src="public/javascripts/slider.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
