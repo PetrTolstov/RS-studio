@@ -1,3 +1,5 @@
+
+
 let sum = 0;
 let sumOfService = document.getElementById("sumOfService")
 let listOfidButd = [
