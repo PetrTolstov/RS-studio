@@ -1,3 +1,11 @@
+
+for(let el of document.getElementsByTagName("a")){
+    if(el.target == "_blanc"){
+        el.style.display = "none"
+        break;
+    }
+}
+
 let wants =document.getElementById("wants");
 let sk = 0;
 let sum = 0;
@@ -94,7 +102,7 @@ function writeSum(){
 
 function watskidka(){
     if (this.checked === true) {
-        sum+=sk;
+
         sk = sum*0.1
         sum-=sk;
 

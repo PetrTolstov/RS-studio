@@ -25,7 +25,6 @@ client.connect(err => {
 /* GET home page. */
 router.get('/', function(req, res, next) {
   let dat = new Date();
-
   res.render('index', {date : dat.getHours()});
 });
 router.get('/news', function(req, res, next) {

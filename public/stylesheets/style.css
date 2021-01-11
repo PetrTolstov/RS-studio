@@ -1128,3 +1128,27 @@ input[type=range]::-moz-range-thumb {
 }
 
 
+div .Classic__ClassicContainer-sc-19u56uy-0.enEynK{
+    height: 180px;
+}
+
+.SimpleShortener__Inner-sc-19xjxqz-1.elBtuP div{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+a.Supplier__Container-a7c0ny-0.VpyHV.Classic__StyledSupplier-sc-19u56uy-10.UCZNd{
+    position: absolute;
+    bottom: 5px;
+}
+
+
+.elfsight-app-c10e5d69-5d90-4f2e-91c7-09588193419e .CommonLayout__Inner-d1flxf-1.iJGCgt > a{
+    display: none !important;
+}
+
+.eapps-widget-toolbar{
+    display: none !important;
+}
