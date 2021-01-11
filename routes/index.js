@@ -20,6 +20,8 @@ client.connect(err => {
 
 });
 
+https://api.vk.com/method/wall.get?owner_id=-201752528&access_token=ACCESS_TOKEN&v=V
+
 
  */
 /* GET home page. */
