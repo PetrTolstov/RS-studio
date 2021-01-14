@@ -1,5 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const https = require('https');
+let listItems;
+
 //mongodb+srv://main_admin:7kvxfrqBKl899TJQ@main.rhunr.mongodb.net/SR-studio?retryWrites=true&w=majority
 /* GET home page.
 const MongoClient = require('mongodb').MongoClient;
@@ -20,31 +23,55 @@ client.connect(err => {
 
 });
 
-https://api.vk.com/method/wall.get?owner_id=-201752528&access_token=ACCESS_TOKEN&v=V
+https://api.vk.com/method/wall.get?owner_id=-201752528&access_token=6700074d6700074d6700074d7f6775e75f667006700074d38fc32d5c76f2ef6005cde93&v=5.126
 
 
  */
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  let dat = new Date();
-  res.render('index', {date : dat.getHours()});
-});
-router.get('/news', function(req, res, next) {
-  let dat = new Date();
+function getPost(){
+  https.get('https://api.vk.com/method/wall.get?owner_id=-201752528&access_token=6700074d6700074d6700074d7f6775e75f667006700074d38fc32d5c76f2ef6005cde93&v=5.126', (resp) => {
+    let data = '';
 
-  res.render('news', {date : dat.getHours()});
+    // A chunk of data has been received.
+    resp.on('data', (chunk) => {
+      data += chunk;
+    });
+
+    // The whole response has been received. Print out the result.
+    resp.on('end', () => {
+      listItems = JSON.parse(data).response.items;
+
+
+    });
+
+  }).on("error", (err) => {
+    console.log("Error: " + err.message);
+  });
+}
+
+getPost()
+
+
+router.get('/', function(req, res, next) {
+
+  res.render('index', {});
+});
+
+
+router.get('/news', function(req, res, next) {
+  getPost();
+  res.render('news', {listPosts: listItems});
 });
 
 router.get('/services', function(req, res, next) {
-  let dat = new Date();
 
-  res.render('services', {date : dat.getHours()});
+
+  res.render('services', {});
 });
 
 router.get('/aboutus', function(req, res, next) {
-  let dat = new Date();
 
-  res.render('aboutus', {date : dat.getHours()});
+
+  res.render('aboutus', {});
 });
 
 

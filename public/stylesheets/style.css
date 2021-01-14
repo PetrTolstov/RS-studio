@@ -1149,3 +1149,56 @@ a.Supplier__Container-a7c0ny-0.VpyHV.Classic__StyledSupplier-sc-19u56uy-10.UCZNd
 .eapps-widget-toolbar{
     display: none !important;
 }
+
+.vkPOST{
+    background: white;
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.vkPOST p{
+    color: black;
+}
+
+.vkPOST img{
+    max-height: 200px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.vkPOSTheader{
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.vkPOSTheader div{
+    max-width: 80%;
+    display: inline-block;
+}
+
+.vkPOSTheader p{
+    font-size: 20px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+
+.vkPOSTheader img{
+    height: 60px;
+    vertical-align: top;
+}
+
+.vkPOSTheader .date{
+    color: gray;
+    font-size: 16px;
+}
+
+
+#conbut{
+    display: flex;
+    justify-content: center;
+}

@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 for(let el of document.getElementsByTagName("a")){
     if(el.target == "_blanc"){
         el.style.display = "none"
