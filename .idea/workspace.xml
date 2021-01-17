@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/news.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/news.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/news.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/services.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/services.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.14.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -118,7 +116,9 @@
       <workItem from="1610316014203" duration="15259000" />
       <workItem from="1610461484454" duration="7860000" />
       <workItem from="1610522175580" duration="14328000" />
-      <workItem from="1610604602915" duration="20071000" />
+      <workItem from="1610604602915" duration="20717000" />
+      <workItem from="1610714988173" duration="1186000" />
+      <workItem from="1610905341158" duration="278000" />
     </task>
     <task id="LOCAL-00001" summary="new dawn">
       <created>1608140284329</created>
@@ -232,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610629552357</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="14.01.2021">
+      <created>1610637070658</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610637070658</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,18 +268,6 @@
     <MESSAGE value="11.01.2021" />
     <MESSAGE value="14.01.2021" />
     <option name="LAST_COMMIT_MESSAGE" value="14.01.2021" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/news.html</url>
-          <line>128</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
